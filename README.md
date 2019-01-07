@@ -18,4 +18,4 @@ Garage toString() function displays all the contents of the database.
 
 All the repositories are tested using JUnit (h2 test database).
 
-Maven built project.
+Maven build project.
