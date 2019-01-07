@@ -8,6 +8,8 @@ Consists of 7 entities :
 - vehicle
 - person
 - rent
+
+
 The database is created using Spring Boot.
 It is uploaded with some initial dataset.
 Garage toString() function displays all the contents of the database.
