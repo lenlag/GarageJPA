@@ -16,6 +16,6 @@ It is uploaded with some initial dataset.
 
 Garage toString() function displays all the contents of the database.
 
-All the repositories are tested using JUnit (h2 test database).
+All the repositories are tested using JUnit (h2 test database) & via Maven test.
 
 Maven build project.
