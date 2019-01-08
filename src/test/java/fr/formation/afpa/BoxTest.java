@@ -33,11 +33,11 @@ public class BoxTest extends TestFather {
 	private TestEntityManager entityManager;
 	
 	@Autowired
-	BoxRepository boxRep;
+	private BoxRepository boxRep;
 	@Autowired
-	GarageRepository gRepo;
+	private GarageRepository gRepo;
 	@Autowired
-	RentalRepository rREpo;
+	private RentalRepository rREpo;
 	
 	@Test
 	public void List() {
@@ -111,7 +111,7 @@ public class BoxTest extends TestFather {
 			assertNotEquals(box1.getParkNumber(), newParkNumber);
 			
 			box1.setParkNumber(newParkNumber);
-
+			boxRep.save(box1);
 			Box boxFromDB = boxRep.findById(box1.getId()).get();
 			assertEquals(boxFromDB.getParkNumber(), newParkNumber);
 		} catch (Exception e) {

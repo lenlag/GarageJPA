@@ -28,7 +28,7 @@ public class AddressTest extends TestFather {
 	private TestEntityManager entityManager;
 
 	@Autowired
-	AddressRepository addrRep;
+	private AddressRepository addrRep;
 
 	@Test
 	public void List() {
